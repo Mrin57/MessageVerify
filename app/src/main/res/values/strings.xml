@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">MessageVerify</string>
+    <string name="lbl_otp">Please enter OTP</string>
+    <string name="lbl_mobile_no">Mobile Number</string>
+    <string name="lbl_verify">Verify</string>
+    <string name="lbl_bt_name">Bluetooth Name</string>
+    <string name="lbl_publish">Publish</string>
+    <string name="lbl_scan">Scan</string>
+</resources>

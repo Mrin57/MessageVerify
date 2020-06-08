@@ -1,0 +1,2 @@
+rootProject.name='MessageVerify'
+include ':app'

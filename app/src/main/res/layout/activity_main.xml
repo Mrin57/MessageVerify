@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/et_mobile_no"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:ems="10"
+        android:hint="@string/lbl_mobile_no"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/et_otp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="@string/lbl_otp"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/et_mobile_no"
+        app:layout_constraintStart_toStartOf="@+id/et_mobile_no"
+        app:layout_constraintTop_toBottomOf="@+id/et_mobile_no" />
+
+    <Button
+        android:id="@+id/btn_verify"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="32dp"
+        android:text="@string/lbl_verify"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_note"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="For POC fixed OTP is 234567"
+        android:textColor="#DA2F2F"
+        app:layout_constraintBottom_toTopOf="@+id/btn_verify"
+        app:layout_constraintEnd_toEndOf="@+id/btn_verify"
+        app:layout_constraintStart_toStartOf="@+id/btn_verify" />
+
+    <TextView
+        android:id="@+id/tv_bluetooth"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="@+id/et_otp"
+        app:layout_constraintStart_toStartOf="@+id/et_otp"
+        app:layout_constraintTop_toBottomOf="@+id/et_otp" />
+
+    <EditText
+        android:id="@+id/et_bt_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="@string/lbl_bt_name"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/tv_bluetooth"
+        app:layout_constraintStart_toStartOf="@+id/tv_bluetooth"
+        app:layout_constraintTop_toBottomOf="@+id/tv_bluetooth" />
+
+    <Button
+        android:id="@+id/btn_publish"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/lbl_publish"
+        app:layout_constraintEnd_toEndOf="@+id/et_bt_name"
+        app:layout_constraintStart_toStartOf="@+id/et_bt_name"
+        app:layout_constraintTop_toBottomOf="@+id/et_bt_name" />
+
+    <Button
+        android:id="@+id/btn_scan"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/lbl_scan"
+        app:layout_constraintEnd_toEndOf="@+id/btn_publish"
+        app:layout_constraintStart_toStartOf="@+id/btn_publish"
+        app:layout_constraintTop_toBottomOf="@+id/btn_publish" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
